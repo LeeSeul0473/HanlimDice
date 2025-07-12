@@ -1,0 +1,4 @@
+python hanlim_dice.py
+
+pip install python-dotenv
+
