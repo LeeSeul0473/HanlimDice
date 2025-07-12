@@ -118,6 +118,9 @@ async def on_message(message): # 봇이 메시지를 받았을 때 호출됩니�
             character_name = f"{message.author.display_name}_mc"
         # print(f'Character Name : {character_name}.')
 
+        if character_name not in sheet_url :
+            character_name = 'mc'
+
         #update sheet
         update_sheet(character_name)
 
